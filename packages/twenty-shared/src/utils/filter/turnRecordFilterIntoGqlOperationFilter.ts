@@ -126,6 +126,18 @@ export const turnRecordFilterIntoRecordGqlOperationFilter = ({
               } as StringFilter,
             },
           };
+        case RecordFilterOperand.IS:
+          return {
+            [correspondingFieldMetadataItem.name]: {
+              eq: recordFilter.value,
+            } as StringFilter,
+          };
+        case RecordFilterOperand.IS_NOT:
+          return {
+            [correspondingFieldMetadataItem.name]: {
+              neq: recordFilter.value,
+            } as StringFilter,
+          };
         default:
           throw new CustomError(
             `Unknown operand ${recordFilter.operand} for ${filterType} filter`,

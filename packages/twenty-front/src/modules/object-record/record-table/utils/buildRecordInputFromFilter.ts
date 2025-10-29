@@ -111,7 +111,11 @@ const computeValueFromFilterText = (
   value: string,
 ) => {
   switch (operand) {
+    case ViewFilterOperand.IS:
+      return value;
     case ViewFilterOperand.CONTAINS:
+      return value;
+    case ViewFilterOperand.IS_NOT:
       return value;
     case ViewFilterOperand.IS_NOT_EMPTY:
       return value;

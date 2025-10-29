@@ -41,6 +41,7 @@ export const FILTER_OPERANDS_MAP = {
     RecordFilterOperand.CONTAINS,
     RecordFilterOperand.DOES_NOT_CONTAIN,
     ...emptyOperands,
+    ...relationOperands,
   ],
   EMAILS: [
     RecordFilterOperand.CONTAINS,
