@@ -584,10 +584,10 @@ msgstr "Δεν είναι δυνατή η σύνδεση με το {connectField
 msgid "Can't impersonate user via api key"
 msgstr "Δεν είναι δυνατή η προσωποποίηση χρήστη μέσω του κλειδιού api"
 
-#. js-lingui-id: vxbVwc
+#. js-lingui-id: 874/Xl
 #: src/modules/workflow/workflow-trigger/utils/assert-version-can-be-activated.util.ts
-msgid "Cannot activate non-draft or non-last-published version"
-msgstr "Δεν είναι δυνατή η ενεργοποίηση μη πρόχειρης ή μη τελευταίας δημοσιευμένης έκδοσης"
+msgid "Cannot activate non-draft or non-deactivated version"
+msgstr ""
 
 #. js-lingui-id: LIPsWu
 #: src/modules/workflow/common/workspace-services/workflow-version-validation.workspace-service.ts
@@ -619,11 +619,6 @@ msgstr "Δεν είναι δυνατή η απενεργοποίηση μη εν
 #: src/engine/workspace-manager/workspace-migration-runner/workspace-migration-runner.service.ts
 msgid "Cannot enable uniqueness due to existing duplicate values. Please review and fix your data first (including soft deleted records)."
 msgstr "Δεν είναι δυνατή η ενεργοποίηση της μοναδικότητας λόγω υπαρχόντων διπλότυπων τιμών. Παρακαλώ επανεξετάστε και διορθώστε τα δεδομένα σας πρώτα (συμπεριλαμβανομένων των μαλακί καταγραμμένων εγγραφών)."
-
-#. js-lingui-id: IDMgr/
-#: src/modules/workflow/workflow-trigger/workspace-services/workflow-trigger.workspace-service.ts
-msgid "Cannot have more than one active workflow version"
-msgstr "Δεν μπορεί να υπάρχει περισσότερη από μία ενεργή έκδοση ροής εργασίας"
 
 #. js-lingui-id: PjZIyI
 #: src/modules/messaging/message-channel-manager/query-hooks/message-channel-update-one.pre-query.hook.ts
@@ -1918,9 +1913,9 @@ msgid "March"
 msgstr "Μάρτιος"
 
 #. js-lingui-id: hw7Mwk
-#: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
+#: src/engine/api/common/common-query-runners/common-create-many-query-runner/common-create-many-query-runner.service.ts
 msgid "Maximum number of records to upsert is {QUERY_MAX_RECORDS}."
-msgstr "Ο μέγιστος αριθμός εγγραφών για καταχώρηση είναι {QUERY_MAX_RECORDS}."
+msgstr ""
 
 #. js-lingui-id: 3JzsDb
 #: src/engine/api/graphql/graphql-query-runner/group-by/resolvers/utils/format-result-with-group-by-dimension-values.util.ts
@@ -2127,7 +2122,6 @@ msgid "Multi-select field default value must be an array"
 msgstr "Η προεπιλεγμένη τιμή πεδίου πολλαπλής επιλογής πρέπει να είναι πίνακας"
 
 #. js-lingui-id: 6rLmLu
-#: src/engine/api/graphql/graphql-query-runner/resolvers/graphql-query-create-many-resolver.service.ts
 #: src/engine/api/common/common-query-runners/common-create-many-query-runner/utils/get-matching-record-id.util.ts
 msgid "Multiple records found with the same unique field values for {conflictingFieldsValues}. Cannot determine which record to update."
 msgstr "Βρέθηκαν πολλαπλές εγγραφές με τις ίδιες μοναδικές τιμές πεδίων για {conflictingFieldsValues}. Δεν είναι δυνατός ο προσδιορισμός της εγγραφής προς ενημέρωση."
@@ -3523,6 +3517,11 @@ msgstr "Ένα μοναδικό πεδίο δεν μπορεί να έχει π�
 #: src/engine/workspace-manager/workspace-migration-v2/workspace-migration-builder-v2/validators/services/flat-index-metadata-validator.service.ts
 msgid "Unique index cannot be created for field {fieldName} of type {fieldType}"
 msgstr "Μοναδικό ευρετήριο δεν μπορεί να δημιουργηθεί για το πεδίο {fieldName} τύπου {fieldType}"
+
+#. js-lingui-id: rtir7c
+#: src/engine/metadata-modules/view-group/exceptions/view-group.exception.ts
+msgid "unknown"
+msgstr ""
 
 #. js-lingui-id: EBZdX5
 #: src/modules/workflow/workflow-trigger/utils/compute-cron-pattern-from-schedule.ts
